@@ -9,7 +9,24 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Sets the includes for the project
-include()
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com
+)
+# Prevent overriding compiler/linker settings on Windows
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+
+enable_testing()
+
+# Define and link test executable
+add_executable(clockwork_tests clockwork_tests.cpp)
+target_link_libraries(clockwork_tests GTest::gtest_main)
+
+# Auto-discover tests
+include(GoogleTest)
+gtest_discover_tests(clockwork_tests)
 
 # Add Subdirectories
 add_subdirectory(src)
