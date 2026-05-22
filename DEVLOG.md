@@ -1,0 +1,1 @@
+First commit with an addition that this project will be completed solely by myself with no assistance of AI for any coding. 
