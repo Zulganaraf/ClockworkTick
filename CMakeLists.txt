@@ -28,8 +28,8 @@ add_subdirectory(docs)
 #target_compile_options(engine PRIVATE -Wall -Wextra)
 
 # Creates an executable target named 'ClockworkTick' from 'clockwork_tick.cpp'
-add_executable(ClockworkTick clockwork_tick.cpp)
+add_executable(ClockworkTick main.cpp)
 
 ###### reminder for further target linked libraries
 # Link the internal 'engine' library
-target_link_libraries(clockwork_tick PRIVATE engine)
+target_link_libraries(ClockworkTick PRIVATE engine)
