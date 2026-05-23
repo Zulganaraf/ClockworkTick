@@ -1,0 +1,5 @@
+if(EXISTS "/Users/aaronmehlberg/Documents/GitHub/ClockworkTick/clockwork_tests[1]_tests.cmake")
+  include("/Users/aaronmehlberg/Documents/GitHub/ClockworkTick/clockwork_tests[1]_tests.cmake")
+else()
+  add_test(clockwork_tests_NOT_BUILT clockwork_tests_NOT_BUILT)
+endif()

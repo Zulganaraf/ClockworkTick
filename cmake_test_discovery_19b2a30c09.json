@@ -1,0 +1,22 @@
+{
+  "tests": 2,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "TrivialTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "SimpleMath",
+          "file": "\/Users\/aaronmehlberg\/Documents\/GitHub\/ClockworkTick\/tests\/clockwork_tests.cc",
+          "line": 4
+        },
+        {
+          "name": "StringCheck",
+          "file": "\/Users\/aaronmehlberg\/Documents\/GitHub\/ClockworkTick\/tests\/clockwork_tests.cc",
+          "line": 9
+        }
+      ]
+    }
+  ]
+}

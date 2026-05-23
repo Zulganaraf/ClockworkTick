@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 
+
+// run with make test
 // A trivial test to check basic equality
 TEST(TrivialTest, SimpleMath) {
     EXPECT_EQ(1 + 1, 2);

@@ -1,0 +1,5 @@
+add_test([=[TrivialTest.SimpleMath]=]  /Users/aaronmehlberg/Documents/GitHub/ClockworkTick/clockwork_tests [==[--gtest_filter=TrivialTest.SimpleMath]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TrivialTest.SimpleMath]=]  PROPERTIES DEF_SOURCE_LINE /Users/aaronmehlberg/Documents/GitHub/ClockworkTick/tests/clockwork_tests.cc:4 WORKING_DIRECTORY /Users/aaronmehlberg/Documents/GitHub/ClockworkTick SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[TrivialTest.StringCheck]=]  /Users/aaronmehlberg/Documents/GitHub/ClockworkTick/clockwork_tests [==[--gtest_filter=TrivialTest.StringCheck]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TrivialTest.StringCheck]=]  PROPERTIES DEF_SOURCE_LINE /Users/aaronmehlberg/Documents/GitHub/ClockworkTick/tests/clockwork_tests.cc:9 WORKING_DIRECTORY /Users/aaronmehlberg/Documents/GitHub/ClockworkTick SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  clockwork_tests_TESTS TrivialTest.SimpleMath TrivialTest.StringCheck)

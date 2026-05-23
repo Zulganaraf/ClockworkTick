@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/clockwork_tests.dir/tests/clockwork_tests.cc.o -o clockwork_tests  lib/libgtest_main.a lib/libgtest.a
