@@ -21,7 +21,7 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 # Define and link test executable
-add_executable(clockwork_tests clockwork_tests.cpp)
+add_executable(clockwork_tests clockwork_tests.cc)
 target_link_libraries(clockwork_tests GTest::gtest_main)
 
 # Auto-discover tests
